@@ -67,7 +67,7 @@ Open `index.html` in a browser or use Live Server (VS Code Extension).
 ![Screenshot (91)](https://github.com/user-attachments/assets/d1df8df1-31da-443a-8fd8-6ebc20c38e0d)
 
 ## 📝 License
-This project is **open-source** and available under the **MIT License**.
+This project is **open-source** and available under the [MIT License](LICENSE).
 
 ## 🙌 Contributing
 Feel free to fork the repo and submit pull requests. Suggestions and improvements are welcome! 🎉
