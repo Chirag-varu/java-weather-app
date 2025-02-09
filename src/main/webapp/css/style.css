@@ -184,6 +184,19 @@ nav ul li a {
   font-size: 12px;
 }
 
+#hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+#body {
+  width: 100%;
+  display: flex;
+}
+
 @media (max-width: 400px) {
   /* 400 * 860 */
   .pc {
@@ -192,4 +205,18 @@ nav ul li a {
     width: auto;
     height: auto;
   }
+
+  #body {
+    width: 100%;
+    display: flex;
+  }
+
+  #hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+  }
+  
 }

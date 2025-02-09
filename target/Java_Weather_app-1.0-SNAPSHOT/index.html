@@ -12,9 +12,29 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Title -->
     <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      #weather-container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      canvas {
+        margin-top: 20px;
+      }
+    </style>
   </head>
 
-  <body>
+  <body class="body">
     <div class="pc">
       <!-- nav section -->
       <nav>
@@ -31,6 +51,11 @@
           </li>
           <li>
             <a href="world.html"><i class="fa-solid fa-earth-americas"></i></a>
+          </li>
+          <li>
+            <a href="graph.html"
+              ><i class="fa-solid fa-chart-line"></i></a
+            >
           </li>
         </ul>
       </nav>
