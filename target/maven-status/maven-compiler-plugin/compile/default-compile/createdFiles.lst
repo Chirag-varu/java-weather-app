@@ -1,3 +1,5 @@
 mypackage\java_weather_app\resources\JakartaEE10Resource.class
 mypackage\java_weather_app\MyServlets.class
+mypackage\java_weather_app\resources\CorsFilter.class
 mypackage\java_weather_app\JakartaRestConfiguration.class
+mypackage\java_weather_app\resources\ApplicationConfig.class

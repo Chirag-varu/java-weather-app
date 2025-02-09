@@ -1,25 +1,87 @@
 <!DOCTYPE html>
-<html>
-<head>
- <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link rel="icon" type="png" href="img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title -->
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-<body>
-<div style="color:white; text-align:center">
-<img src="images/weather-logo.png " alt ="weather-image" style=" height: auto;width: auto;filter: drop-shadow(10px 10px 10px black);">
-    <h1>Welcome to the Weather Web App</h1>
- 
-    <h2>Technologies Used: </h2> <p>HTML, CSS, JS, Java, Servlet, JSP, OpenWeather API</p>
-     <form action="MyServlets" method="post" class="searchInput">
-            <input type="text" placeholder="Enter City Name" id="searchInput" value="New Delhi" name="city"/>
-            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>    
- </div>
- 
-</body>
+  <body>
+    <div class="pc">
+      <!-- nav section -->
+      <nav>
+        <ul>
+          <li>
+            <a class="active" href="index.html"
+              ><i class="fa-solid fa-location-arrow"></i
+            ></a>
+          </li>
+          <li>
+            <a href="search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li>
+            <a href="world.html"><i class="fa-solid fa-earth-americas"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- main section -->
+      <div id="screen">
+        <!-- city name -->
+        <div class="city-name">
+          <i class="fa-solid fa-map-pin"></i>
+          <h1 id="city-name">Mumbai</h1>
+        </div>
+        <!-- weather icon -->
+        <div class="weather-icon-css">
+          <img class="weather-icon" src="img/sun.png" />
+        </div>
+        <!-- weather details -->
+        <div class="weather-description">
+          <div class="show-metric" id="metric">0°</div>
+          <div class="weather-details">
+            <div class="weather-main" id="weather-main">Sunnen</div>
+            <div class="h-f">
+              <div class="show-humidity">H: <span id="humidity">60</span></div>
+              ||
+              <div class="show-humidity">
+                F: <span id="feels-like">60</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Today-forecast -->
+        <div class="forcasts-box">
+          <div class="today-forecast">
+            <h4>TODAY</h4>
+            <div class="weather-icon-today">
+              <img class="weather-icons" src="img/sun.png" />
+            </div>
+            <div class="temp-today">
+              <span id="temp-min-today">50°</span><span>/ </span
+              ><span id="temp-max-today">55°</span>
+            </div>
+            <div class="weather-main-today" id="weather-main">Sunnen</div>
+          </div>
+
+          <!-- 5day Forecast -->
+          <div class="forecast">
+            <h5>6-DAYS FORECAST</h5>
+            <div id="forecast-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

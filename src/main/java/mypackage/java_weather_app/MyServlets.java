@@ -17,7 +17,6 @@ import java.text.SimpleDateFormat;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-
 /**
  * Servlet implementation class MyServlets
  */
@@ -107,6 +106,8 @@ public class MyServlets extends HttpServlet {
     }
 
     /**
+     * @param request
+     * @throws jakarta.servlet.ServletException
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
